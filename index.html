@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Girlando Mobile Apps</title>
   <meta name="description" content="Sito ufficiale di Girlando Mobile Apps, sviluppatore di VehicleCare OBD.">
+
   <style>
     body {
       margin: 0;
@@ -14,11 +15,28 @@
       font-family: Arial, sans-serif;
       text-align: center;
     }
-    header { padding: 90px 20px 50px; }
-    h1 { font-size: 42px; margin-bottom: 12px; }
-    h2 { color: #60a5fa; }
-    p { line-height: 1.7; }
-    section { padding: 30px 20px 70px; }
+
+    header {
+      padding: 90px 20px 50px;
+    }
+
+    h1 {
+      font-size: 42px;
+      margin-bottom: 12px;
+    }
+
+    h2 {
+      color: #60a5fa;
+    }
+
+    p {
+      line-height: 1.7;
+    }
+
+    section {
+      padding: 30px 20px 70px;
+    }
+
     .card {
       max-width: 650px;
       margin: auto;
@@ -26,10 +44,63 @@
       background: #1e293b;
       border-radius: 18px;
     }
-    footer { padding: 30px; color: #a5b4c8; }
+
+    .download-button {
+      display: inline-block;
+      margin-top: 22px;
+      padding: 17px 30px;
+      background: #2563eb;
+      color: #ffffff;
+      text-decoration: none;
+      font-size: 17px;
+      font-weight: bold;
+      border-radius: 12px;
+      transition: background 0.2s ease;
+    }
+
+    .download-button:hover {
+      background: #1d4ed8;
+    }
+
+    .download-button:focus-visible {
+      outline: 3px solid #ffffff;
+      outline-offset: 4px;
+    }
+
+    .download-note {
+      margin-top: 16px;
+      font-size: 13px;
+      color: #a5b4c8;
+    }
+
+    footer {
+      padding: 30px;
+      color: #a5b4c8;
+    }
+
+    @media (max-width: 480px) {
+      header {
+        padding: 60px 20px 30px;
+      }
+
+      h1 {
+        font-size: 32px;
+      }
+
+      .card {
+        padding: 25px 20px;
+      }
+
+      .download-button {
+        display: block;
+        padding: 17px 12px;
+      }
+    }
   </style>
 </head>
+
 <body>
+
   <header>
     <h1>Girlando Mobile Apps</h1>
     <p>Applicazioni intelligenti per la vita quotidiana.</p>
@@ -37,18 +108,38 @@
 
   <section>
     <div class="card">
+
       <h2>VehicleCare OBD</h2>
+
       <p>
         Gestisci la manutenzione dei tuoi veicoli,
         monitora le scadenze e utilizza la
         diagnostica OBD2 direttamente dal tuo smartphone.
       </p>
-      <p>Un progetto sviluppato da Girlando Mobile Apps.</p>
+
+      <p>
+        Un progetto sviluppato da Girlando Mobile Apps.
+      </p>
+
+      <a
+        class="download-button"
+        href="https://play.google.com/store/apps/details?id=com.simone.vehiclecareobd"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="Scarica VehicleCare OBD da Google Play">
+        &#128241; SCARICA SU GOOGLE PLAY
+      </a>
+
+      <p class="download-note">
+        Disponibile per dispositivi Android.
+      </p>
+
     </div>
   </section>
 
   <footer>
     &copy; 2026 Girlando Mobile Apps
   </footer>
+
 </body>
 </html>
